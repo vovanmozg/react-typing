@@ -326,15 +326,13 @@ class App extends Component {
     return (
       <div className="App">
         <Header handleToggleMenu = {this.handleToggleMenu}/>
-
+        <Stats accuracy={accuracy} showStats={showStats} incorrectArr={incorrectArr} wpm={wpm} currentCount={currentCount} inputSelected={inputSelected} incorrectWordsArr={incorrectWordsArr} displayText = {this.displayText}/>
+        <Sidebar showMenu={showMenu} displayText={this.displayText} genBlur={this.genBlur} genFocus={this.genFocus} ref='sidebar'/>
         <div className="main" ref='main'>
-          <Stats accuracy={accuracy} showStats={showStats} incorrectArr={incorrectArr} wpm={wpm} currentCount={currentCount} inputSelected={inputSelected} incorrectWordsArr={incorrectWordsArr} displayText = {this.displayText}/>
-
           <Screen screenFade={screenFade} inputSelected={inputSelected} completedText={completedText} inputText={inputText} remainingText={remainingText} ref='screen'/>
-
           <Keyboard keyCode={keyCode} showStats={showStats} incorrect={incorrect} correctLetter={correctLetter} remainingText={remainingText} inputSelected={inputSelected} correctLetterCase={correctLetterCase} caps={caps} incorrectArr={incorrectArr} keyboardScaler={keyboardScaler}/>
         </div>
-        <Sidebar showMenu={showMenu} displayText={this.displayText} genBlur={this.genBlur} genFocus={this.genFocus} ref='sidebar'/>
+
     </div>
     );
   }

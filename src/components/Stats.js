@@ -9,26 +9,20 @@ export class Stats extends Component {
     const {showStats, accuracy, incorrectArr, wpm, currentCount, inputSelected, incorrectWordsArr, displayText} = this.props
     return (
       <div className={"stats " + (showStats === true ? 'statsCompleted': '')}>
-        <div className={"resultsTitleHidden " + (showStats === true ? 'resultsTitleShow': '')}>Results</div>
-
           <div className="statbox">
-            <p className ="statbox__title">Accuracy</p>
-            <p className ="statbox__value">{accuracy}</p>
+            <p className ="statbox__value" title="Accuracy">{accuracy}</p>
             <p className ="statbox__unit">%</p>
           </div>
           <div className="statbox">
-            <p className ="statbox__title">Typos</p>
-            <p className ="statbox__value">{incorrectArr.length}</p>
+            <p className ="statbox__value" title="Typos">{incorrectArr.length}</p>
           </div>
           <div className="statbox">
-            <p className ="statbox__title">Speed</p>
-            <p className ="statbox__value">{wpm}</p>
-            <p className ="statbox__unit">wpm</p>
+            <p className ="statbox__value" title="Speed (wpm)">{wpm}</p>
+            <p className ="statbox__unit"></p>
           </div>
           <div className="statbox">
-            <p className ="statbox__title">Time</p>
-            <p className ="statbox__value">{currentCount}</p>
-            <p className ="statbox__unit">sec</p>
+            <p className ="statbox__value" title="Time (sec)">{currentCount}</p>
+            <p className ="statbox__unit"></p>
           </div>
 
       <div className={"resultsOptionsHidden " + (showStats === true ? 'resultsOptionsShow': '')}>

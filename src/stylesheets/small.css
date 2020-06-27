@@ -1,12 +1,10 @@
 /* ---Main--- */
 .main {
-  background: #2b2c30;
-  float: left;
   height: calc(100% - 70px);
   overflow: auto;
-  width: calc(100% - 440px);
-  margin: 20px 40px 90px 40px;
   position: relative;
+  width: 910px;
+  margin: 0 auto;
 }
 
 

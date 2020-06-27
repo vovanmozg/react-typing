@@ -1,32 +1,30 @@
 /* ---Screen--- */
 .screen {
-  background: #dcdcdc;
-  height: 300px;
-  margin: 80px 0 0;
+  height: 500px;
   width: 100%;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  font-size: 20px;
-  line-height: 30px;
+  border: 1px solid #eee;
+  border-width: 1px 0 1px 0;
+  font-size: 35px;
+  line-height: 60px;
   letter-spacing: .05ex;
   color: #8f8f8f;
   overflow: hidden;
   font-family: 'Roboto Mono', monospace;
-  font-style: italic;
   position: relative;
 }
 
 .screen__inner__wrapper {
-  height: 270px;
+  height: 470px;
   padding: 0 30px;
-  border-top: 30px solid gainsboro;
+  border-top: 30px solid red;
   overflow: hidden;
   opacity: 0;
 }
 
 .screen__inner__wrapperFadeIn {
-  height: 270px;
+  height: 470px;
   padding: 0 30px;
-  border-top: 30px solid gainsboro;
+  border-top: 30px solid #fff;
   overflow: hidden;
   opacity: 1;
   transition: opacity 1s;
@@ -60,16 +58,20 @@
 
 .progressMarker {
   position: relative;
-  top: 5px;
+  top: 30px;
   left: 1px;
+
+
+  height: 20px;
 }
 
 .progressMarker::before {
   content: ' ';
+  width: 20px;
   height: 20px;
   position: absolute;
   font-style: initial;
-  border-left: 1px solid #a7a6a6;
+  border-bottom: 5px solid #00f;
 }
 
 .progressMarkerNum::before {
@@ -77,7 +79,7 @@
   height: 25px;
   position: absolute;
   font-style: initial;
-  border-left: 1px solid #a7a6a6;
+  border-left: 5px solid #a7a6a6;
 }
 
 .progressMarkerSym::before {

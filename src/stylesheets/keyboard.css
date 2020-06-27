@@ -1,6 +1,6 @@
 /* ---Keyboard--- */
 .keyboard {
-  background: #404146;
+  background: #fff;
   margin: 30px auto;
   padding: 9px;
   text-align: center;
@@ -12,9 +12,10 @@
 }
 
 .keyboard__key {
+  font-family: 'Roboto';
   height: 44px;
   width: 44px;
-  background: #35363a;
+  background: #fff;
   display: inline-block;
   text-align: center;
   margin: 3px;
@@ -22,7 +23,8 @@
   color: #626262;
   font-size: 14px;
   border-radius: 5px;
-  border-bottom: 3px solid #2b2b2b;
+
+  border: 1px solid #eee;
   position: relative
 }
 

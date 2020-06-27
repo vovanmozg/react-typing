@@ -4,19 +4,21 @@
 }
 
 .header {
-  background: #0c87d6;
+
   height: 70px;
   width: 100%;
   position: relative;
 }
 
 .header__title {
-  color: #fff;
+
   font-size: 20px;
   line-height: 70px;
   margin-left: 40px;
 }
 
 .header__options {
-  display: none;
+  position: absolute;
+  padding: 25px 0 0 15px;
+  cursor: pointer;
 }

@@ -1,25 +1,32 @@
-
-
 /* ---Sidebar--- */
 .rightside {
-  background: #2b2c30;
-  float: left;
-  height: calc(100% - 70px);
+  zheight: calc(100% - 70px);
   width: 350px;
+  height: 40px;
+  zoverflow: hidden;
+  display: none;
 }
 
 .rightsideShow {
-  background: #2b2c30;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
   float: left;
-  height: calc(100% - 70px);
   width: 350px;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 10px;
 }
 
+.sidebar {
+
+
+}
 
 .sidebar__box {
   margin-bottom: 20px;
   background: #dcdcdc;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
 }
 
 .sidebar__generator__input {
@@ -100,13 +107,6 @@
   font-weight: 900;
   line-height: 35px;
   padding: 0 20px;
-}
-
-.sidebar {
-  float: left;
-  height: calc(100% - 40px);
-  margin: 100px 40px 0 0;
-  width: calc(100% - 40px);
 }
 
 .statbox {
